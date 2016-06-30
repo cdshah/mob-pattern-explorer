@@ -1,0 +1,39 @@
+
+
+
+// START SNIPPET configuration-injection
+allprojects {
+
+  
+}
+subprojects {
+ apply plugin: "java"
+ 
+    repositories {
+       mavenCentral()
+        maven { url "https://repository.jboss.org/nexus/content/repositories/releases" }
+    }
+    
+	dependencies {       
+	 
+    testCompile "junit:junit:4.12"
+    
+    
+ }
+ sourceCompatibility = 1.8
+ targetCompatibility = 1.8
+ 
+    version = '1.0'
+
+  
+}
+/*subprojects {
+
+
+
+
+    dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    }
+
+}*/

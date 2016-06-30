@@ -1,0 +1,5 @@
+<?init class="org.zkoss.zk.ui.util.Composition"
+        arg0="/layout.zul"?>
+<zk >
+<include self="@define(mobPatternFinder)" viewModel="@id('nav') @init('com.mycompany.vm.NavigationVM')" src="@bind(nav.location)" />
+</zk>

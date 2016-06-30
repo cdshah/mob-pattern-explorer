@@ -1,0 +1,3 @@
+// START SNIPPET include-projects
+include "Core", "App" , "Common"
+// END SNIPPET include-projects

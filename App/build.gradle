@@ -1,0 +1,23 @@
+
+apply plugin: 'war'
+apply plugin: 'eclipse-wtp'
+sourceCompatibility = 1.7
+version = '1.0'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "http://mavensync.zkoss.org/maven2"
+    }
+}
+dependencies {
+  //  compile group: 'commons-collections', name: 'commons-collections', version: '3.2.2'
+     compile project(':Common')
+     compile "org.zkoss.zk:zkplus:8.0.1.1"
+    compile "org.zkoss.zk:zkbind:8.0.1.1"
+    compile "org.zkoss.zk:zkspring-core:3.0"
+	compile group: 'org.springframework', name: 'spring-web', version: '4.2.6.RELEASE'
+	
+
+	providedCompile "javax.servlet:servlet-api:2.5"
+}

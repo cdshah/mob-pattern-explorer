@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="2.0">
+	<wb-module deploy-name="App">
+		<property name="context-root" value="App"/>
+		<wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/resources"/>
+		<wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/java"/>
+		<wb-resource deploy-path="/" source-path="src/main/webapp"/>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/resource/Common/Common">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/K:/JavaSW/Downloads/gradle-2.12-all/gradle-2.12/caches/modules-2/files-2.1/org.zkoss.zk/zkplus/8.0.1.1/29788481a741ab413cec326da4bead5fa94fb48a/zkplus-8.0.1.1.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/K:/JavaSW/Downloads/gradle-2.12-all/gradle-2.12/caches/modules-2/files-2.1/org.zkoss.zk/zkbind/8.0.1.1/170d07c964f760a8eb60455457595ad1564a373c/zkbind-8.0.1.1.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/K:/JavaSW/Downloads/gradle-2.12-all/gradle-2.12/caches/modules-2/files-2.1/org.zkoss.zk/zkspring-core/3.0/5fb1897dbfb8b591b0a8f6724a5f2aaedde1d888/zkspring-core-3.0.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/K:/JavaSW/Downloads/gradle-2.12-all/gradle-2.12/caches/modules-2/files-2.1/org.springframework/spring-web/4.2.6.RELEASE/d5ce949da3f3266f118ed899a153413613b503ad/spring-web-4.2.6.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/K:/JavaSW/Downloads/gradle-2.12-all/gradle-2.12/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5/commons-collections-3.2.2.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/K:/JavaSW/Downloads/gradle-2.12-all/gradle-2.12/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.7.4/1e9c6f3659644aeac84872c3b62d8e363bf4c96d/jackson-databind-2.7.4.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/K:/JavaSW/Downloads/gradle-2.12-all/gradle-2.12/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.7.4/84b2f8e53bd8a077d402bc99d9bce816c2b2d0f9/jackson-annotations-2.7.4.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/K:/JavaSW/Downloads/gradle-2.12-all/gradle-2.12/caches/modules-2/files-2.1/org.zkoss.zk/zul/8.0.1.1/e41f815199153b6b170cc31bddf720da4ab2b828/zul-8.0.1.1.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/K:/JavaSW/Downloads/gradle-2.12-all/gradle-2.12/caches/modules-2/files-2.1/org.javassist/javassist/3.18.2-GA/1180a90fbad732b60fb728a6bbe8fcb3151423d7/javassist-3.18.2-GA.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/K:/JavaSW/Downloads/gradle-2.12-all/gradle-2.12/caches/modules-2/files-2.1/org.springframework/spring-aop/4.2.6.RELEASE/5efbfccb19efda2956b8977561bf4da6b15b0d0e/spring-aop-4.2.6.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/K:/JavaSW/Downloads/gradle-2.12-all/gradle-2.12/caches/modules-2/files-2.1/org.springframework/spring-beans/4.2.6.RELEASE/d4a319fb4d949fb6313f45c929947b9b4e26283e/spring-beans-4.2.6.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/K:/JavaSW/Downloads/gradle-2.12-all/gradle-2.12/caches/modules-2/files-2.1/org.springframework/spring-context/4.2.6.RELEASE/bbf3c8526fe37bb341507f28db17882d4348dbca/spring-context-4.2.6.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/K:/JavaSW/Downloads/gradle-2.12-all/gradle-2.12/caches/modules-2/files-2.1/org.springframework/spring-core/4.2.6.RELEASE/a1c6ef01f18888f51fc5054c65ef4787b7cf0a1e/spring-core-4.2.6.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/K:/JavaSW/Downloads/gradle-2.12-all/gradle-2.12/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.7.4/b8f38a249116b66d804a5ca2b14a3459b7913a94/jackson-core-2.7.4.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/K:/JavaSW/Downloads/gradle-2.12-all/gradle-2.12/caches/modules-2/files-2.1/org.zkoss.zk/zk/8.0.1.1/7ad1bd7a8f228e68b64963c6015f9b5146aea852/zk-8.0.1.1.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/K:/JavaSW/Downloads/gradle-2.12-all/gradle-2.12/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/K:/JavaSW/Downloads/gradle-2.12-all/gradle-2.12/caches/modules-2/files-2.1/org.springframework/spring-expression/4.2.6.RELEASE/c0182d73f348ab11d51d45cbe29f3820c32d0ccc/spring-expression-4.2.6.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/K:/JavaSW/Downloads/gradle-2.12-all/gradle-2.12/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/K:/JavaSW/Downloads/gradle-2.12-all/gradle-2.12/caches/modules-2/files-2.1/org.zkoss.common/zweb/8.0.1.1/31639658f8eaeca36892647f551ffc6753bd6e4/zweb-8.0.1.1.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/K:/JavaSW/Downloads/gradle-2.12-all/gradle-2.12/caches/modules-2/files-2.1/org.zkoss.common/zcommon/8.0.1.1/a9d5079b2c21736915f5346ed7ed86e51ff27ff4/zcommon-8.0.1.1.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/K:/JavaSW/Downloads/gradle-2.12-all/gradle-2.12/caches/modules-2/files-2.1/commons-codec/commons-codec/1.8/af3be3f74d25fc5163b54f56a0d394b462dafafd/commons-codec-1.8.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/K:/JavaSW/Downloads/gradle-2.12-all/gradle-2.12/caches/modules-2/files-2.1/commons-fileupload/commons-fileupload/1.2.2/1e48256a2341047e7d729217adeec8217f6e3a1a/commons-fileupload-1.2.2.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/K:/JavaSW/Downloads/gradle-2.12-all/gradle-2.12/caches/modules-2/files-2.1/org.zkoss.common/zel/8.0.1.1/315e5ee65ef40a37492c60a5da44434f4978fb08/zel-8.0.1.1.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/K:/JavaSW/Downloads/gradle-2.12-all/gradle-2.12/caches/modules-2/files-2.1/org.beanshell/bsh/2.0b4/a05f0a0feefa8d8467ac80e16e7de071489f0d9c/bsh-2.0b4.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/K:/JavaSW/Downloads/gradle-2.12-all/gradle-2.12/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.5/6b262da268f8ad9eff941b25503a9198f0a0ac93/slf4j-api-1.7.5.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/K:/JavaSW/Downloads/gradle-2.12-all/gradle-2.12/caches/modules-2/files-2.1/org.slf4j/slf4j-jdk14/1.7.5/33cf4abac351aa45dd130d31a1e7e33fbbba4762/slf4j-jdk14-1.7.5.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+	</wb-module>
+</project-modules>

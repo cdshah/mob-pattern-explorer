@@ -1,0 +1,17 @@
+<zk >
+	<borderlayout hflex="1" vflex="1"  apply="com.mycompany.vm.PropertyRetriever">
+		<north height="100px" border="none" >
+			<include src="banner.zul"/>
+		</north>
+		<west width="100px" border="none" collapsible="true" splittable="true" minsize="300">
+			<toolbarbutton id="createProduct" label="Create New Product"/>
+		</west>
+		<center id="mainContent" autoscroll="true" border="none"  >
+			
+			
+		</center>
+		<south height="50px" border="none">
+			<include src="footer.zul"/>
+		</south>
+	</borderlayout>
+</zk>

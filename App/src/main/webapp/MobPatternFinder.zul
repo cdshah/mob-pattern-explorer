@@ -1,0 +1,43 @@
+<?page title="Mob Pattern Finder" contentType="text/html;charset=UTF-8"?>
+
+<zk>
+<window title="Search"  border="normal" 
+apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('com.mycompany.vm.CallLogSearchVM')">
+<hbox align="center" height="50px">
+		Phone No:
+		<textbox id="phoneNoBox" value="@bind(vm.phoneNo)"  />
+		From Date :		
+		 <datebox id="fromDateBox" cols="12" format="long+medium"  value="@bind(vm.fromDate)" width="200px"  />
+		 To Date :		
+		 <datebox id="toDateBox" cols="12" format="long+medium" onCreate="self.value = new Date()" value="@bind(vm.toDate)"
+		  width="200px" />
+		<button id="searchButton" label="Search" image="/img/search.png" onClick="@command('search')"
+		 
+		/>
+	</hbox>
+	
+	<listbox id="callLogsBox" height="500px"  model="@bind(vm.callLogs)" emptyMessage="No call logs found in the result"   >
+		<listhead>
+			<listheader label="First Number" />
+			<listheader label="Second Number" />
+			<listheader label="Call Start Time" />
+			<listheader label="Duration (hh:mm)" />
+			<listheader label="Location" />
+			<listheader label="Call Type" />
+		</listhead>
+		<template name="model">
+	    <listitem>
+	        <listcell  label="@bind(each.firstNumber)"></listcell>
+	        <listcell  label="@bind(each.secondNumber)"></listcell>
+	        <listcell label="@bind(each.startTime)"></listcell>
+	        <listcell label="@bind(each.duration)"></listcell>
+	        <listcell label="@bind(each.location)"></listcell>
+	        <listcell label="@bind(each.callType)"></listcell>
+	    </listitem>
+	    </template>
+	</listbox>
+
+
+</window>
+
+</zk>

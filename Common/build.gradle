@@ -1,0 +1,13 @@
+
+apply plugin: 'java'
+apply plugin: 'eclipse-wtp'
+sourceCompatibility = 1.7
+version = '1.0'
+
+dependencies {
+    compile group: 'commons-collections', name: 'commons-collections', version: '3.2.2'
+	compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.7.4'
+	compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.7.4'
+	
+
+}

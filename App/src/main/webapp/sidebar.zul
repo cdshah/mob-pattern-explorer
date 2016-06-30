@@ -1,0 +1,17 @@
+<grid hflex="1" vflex="1" sclass="sidebar">
+	<columns>
+		<column width="90px"/>
+		<column/>
+	</columns>
+	<rows  >
+		<row>
+			<a tooltip="1" > Call Logs </a>
+		</row>
+		<row>
+			<a tooltip="2"  >TimeOut</a>
+		</row>
+		<row>
+			<toolbarbutton id="createProduct" label="Create New Product"/>
+		</row>
+	</rows>
+</grid>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/aop
+http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.0.xsd
+http://www.springframework.org/schema/tx
+http://www.springframework.org/schema/tx/spring-tx.xsd">
+  
+
+       <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"> <!-- Using and configuring C3P0 proxy -->
+        <property name="driverClass"><value>org.h2.Driver</value></property>
+        <property name="jdbcUrl"><value>jdbc:h2:~/testing-2/h2;DATABASE_TO_UPPER=false;DB_CLOSE_ON_EXIT=FALSE</value></property>
+        <property name="user"><value>sa</value></property>
+        <property name="password"><value></value></property>
+        
+        <property name="initialPoolSize"><value>3</value></property> <!-- Number of Connections a pool will try to acquire upon startup -->
+        <property name="minPoolSize"><value>1</value></property> <!-- Minimum connection pool size -->
+        <property name="maxPoolSize"><value>20</value></property> <!-- Max connection pool size -->
+        <property name="maxConnectionAge"><value>3600</value></property> <!-- Set max connection age to 1 hour, after it will release -->
+        <property name="maxIdleTime"><value>600</value></property> <!-- 10 minutes connection can stay unused before be discarded -->
+        <property name="checkoutTimeout"><value>240000</value></property> <!-- Each what time check for unused connections -->
+        </bean>
+        <tx:annotation-driven  transaction-manager="transactionManager" />
+        <bean name="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager" >
+        <property name="sessionFactory" ref="sessionFactory"></property>
+        </bean>
+        
+          <context:annotation-config />
+
+    <!-- Build sessionFactory annotation base configuration -->
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+
+        <property name="dataSource" ref ="dataSource"/> <!-- Injecting datasource C3P0 to Hibernate sessionFactory datasource -->
+        <property name="packagesToScan" value="com.mycompany.dbEntity"/> <!-- Package will be scanned for entity classes -->
+
+        <property name="hibernateProperties">   <!-- Configuring properties -->
+            <props> 
+				
+                <prop key="hibernate.dialect"> org.hibernate.dialect.H2Dialect</prop> <!-- Put dialect for particular database to use queries to this DB -->
+                <prop key="show_sql">true</prop>
+                <prop key="hibernate.hbm2ddl.auto">create</prop>   
+				
+
+                <prop key="hibernate.c3p0.min_size">1</prop> <!-- Same to minPoolSize -->
+                <prop key="hibernate.c3p0.max_size">20</prop> <!--Same to maxPoolSize -->
+                <prop key="hibernate.c3p0.timeout">600</prop> <!-- Same to maxIdleTime -->
+                <prop key="hibernate.c3p0.max_statements">5</prop> <!-- Set number of cached statements used often -->
+
+                <prop key="hibernate.max_fetch_depth">3</prop>  <!-- Sets a maximum "depth" for the outer join fetch tree for single-ended associations (one-to-one, many-to-one) -->
+                <prop key="hibernate.jdbc.fetch_size">30</prop> <!-- Declare how many records will get from database in one package -->
+                <prop key="hibernate.jdbc.batch_size">15</prop> <!-- When it's a lot of queries in short time passed to database this put queries in one batch and send them to database -->
+                <prop key="hibernate.show_sql">true</prop>
+
+            </props>
+       </property> <!-- End of configuration hibernateProperties -->
+
+    </bean> <!-- End of configuring org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean -->
+        
+  
+</beans>  
